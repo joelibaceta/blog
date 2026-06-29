@@ -31,7 +31,19 @@ social_preview_image: /assets/image.png
 toc: true
 
 comments:
-  provider:
+  # Global switch for the post-comment system. Keeping it empty means disabled.
+  provider: giscus # [disqus | utterances | giscus]
+  # Giscus options › https://giscus.app
+  giscus:
+    repo: joelibaceta/blog
+    repo_id: R_kgDOJ2ygqg
+    category: Announcements
+    category_id: DIC_kwDOJ2ygqs4DAHZr
+    mapping: pathname # optional, default to 'pathname'
+    strict: 0 # optional, default to '0'
+    input_position: bottom # optional, default to 'bottom'
+    lang: # optional, default to the value of `site.lang`
+    reactions_enabled: 1 # optional, default to the value of `1`
 
 paginate: 10
 
@@ -59,7 +71,7 @@ defaults:
       type: posts
     values:
       layout: post
-      comments: false
+      comments: true
       toc: true
       permalink: /posts/:title/
   - scope:
