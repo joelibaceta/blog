@@ -5,7 +5,10 @@ timezone: America/Lima
 
 title: Joel Ibaceta
 tagline: Personal blog
-description: Blog personal de Joel Ibaceta
+description: >-
+  Blog personal de Joel Ibaceta. Código, tecnología, libros, viajes,
+  fotografía y todo lo que resulte lo suficientemente interesante como
+  para detenerme a escribir sobre ello.
 
 url: "https://blog.joelibaceta.com"
 
@@ -23,6 +26,7 @@ analytics:
     id: G-Y6VYLZ2F4R
 
 avatar: /assets/image.png
+social_preview_image: /assets/image.png
 
 toc: true
 
