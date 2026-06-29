@@ -1,0 +1,46 @@
+---
+---
+
+@use 'abstracts/variables' with (
+  $theme: '{{ site.theme_mode }}'
+);
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+#avatar img {
+  object-fit: cover;
+  object-position: center;
+  width: 112px;
+  height: 112px;
+}
+
+.lang-switch-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+  padding: 0.6rem 0.9rem;
+  font-size: 0.72rem;
+  line-height: 1.3;
+  border-radius: 6px;
+  border: 1px solid var(--card-border-color);
+  background-color: rgba(128, 128, 128, 0.08);
+  color: var(--text-muted-color);
+
+  i {
+    font-size: 0.85rem;
+    opacity: 0.7;
+  }
+
+  a {
+    color: var(--link-color);
+  }
+}
