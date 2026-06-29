@@ -1,71 +1,112 @@
-# Site
-name: "Groway.Studio"
-title: "Groway.Studio"
-description: "Blog Informativo"
-logo: 'assets/images/svg-006.svg'
-favicon: 'assets/images/logo.png'
-google_analytics: 'G-B6HDWL67FJ'
-disqus: 'Groway Studio'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
-include: ["_pages"]
-permalink: /:title/
+theme: jekyll-theme-chirpy
 
-# Authors
-authors:
-  # sal:
-  #   name: Sal
-  #   display_name: Sal
-  #   gravatar: e56154546cf4be74e393c62d1ae9f9d4
-  #   email: wowthemesnet@gmail.com
-  #   web: https://www.wowthemes.net
-  #   twitter: https://twitter.com/wowthemesnet
-  #   description: "Author of Blog de Groway, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
-  # john:
-  #   name: John
-  #   display_name: John    
-  #   avatar: 'assets/images/avatar.png'
-  #   gravatar: b1cc14991db7a456fcd761680bbc8f81
-  #   email: wowthemesnet@gmail.com
-  #   web: https://www.wowthemes.net
-  #   twitter: https://twitter.com/wowthemesnet
-  #   description: "This is the author box. Write a short description of the author here. You are currently previewing Blog de Groway demo, a Jekyll template compatible with Github pages."
+lang: es-ES
+timezone: America/Lima
 
-# Plugins
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-archives
-    
-# Archives
-jekyll-archives:
-  enabled:
-    - categories
-  layout: archive
-  permalinks:
-    category: '/category/:name/'
-    
-# Pagination 
-paginate: 6
-paginate_path: /page:num/
-    
-# Other
-markdown: kramdown
+title: Joel Ibaceta
+tagline: Personal blog
+description: Blog personal de Joel Ibaceta
+
+url: "https://blog.joelibaceta.com"
+
+github:
+  username: joelibaceta
+
+social:
+  name: Joel Ibaceta
+  email: mail@joelibaceta.com
+  links:
+    - https://github.com/joelibaceta
+
+analytics:
+  google:
+    id: G-Y6VYLZ2F4R
+
+avatar: /assets/image.png
+
+toc: true
+
+comments:
+  provider:
+
+paginate: 10
+
+baseurl: ""
 
 kramdown:
-  input: GFM
+  footnote_backlink: "&#8617;&#xfe0e;"
   syntax_highlighter: rouge
   syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
     block:
       line_numbers: true
+      start_line: 1
 
-# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
-adsense: "disabled"
-adsense-data-ad-client: "ca-pub-3412143450191416"
-adsense-data-ad-slot: "1363087678"
+collections:
+  tabs:
+    output: true
+    sort_by: order
 
-# Lazy Images ("enabled" or "disabled")
-lazyimages: "disabled"
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: false
+      toc: true
+      permalink: /posts/:title/
+  - scope:
+      path: "_posts/es"
+      type: posts
+    values:
+      lang: es-ES
+      permalink: /es/:title/
+  - scope:
+      path: "_posts/en"
+      type: posts
+    values:
+      lang: en
+      permalink: /en/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
 
-exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - tools
+  - README.md
+  - LICENSE
+  - "*.config.js"
+  - "package*.json"
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
