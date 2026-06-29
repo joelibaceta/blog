@@ -14,7 +14,7 @@ Eso dice algo de ti. No sé exactamente qué, pero algo.
 
 ---
 
-¿Sabes?, Hay algo extraño en los comienzos. Nunca empiezan cuando uno cree que empiezan. Este blog existió durante meses como una carpeta vacía, un dominio configurado y la promesa vaga de "escribir más". La clásica infraestructura para la procrastinación.
+¿Sabes?, Hay algo extraño en los comienzos. Nunca empiezan cuando uno cree que empiezan. Este blog existió durante meses como una carpeta vacía, un dominio configurado y la promesa vaga de "_escribir más_". La clásica infraestructura para la procrastinación.
 
 Y sin embargo, aquí estamos.
 
